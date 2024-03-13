@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>E-commerce store</title>
+  </head>
+  <body>
+    <header>
+     <div>
+        <h1 class="logo">LOGO.</h1>
+     </div>
+
+      <div class="search">
+        <select name="all" id="all">
+          <option value="All">All</option>
+          <option value="electronics">electronics</option>
+          <option value="jewelery">jewelery</option>
+          <option value="men's clothing">men's clothing</option>
+        </select>
+        <input type="text"   oninput="handleInput(this)" placeholder="Search items here...." class="input"/>
+        <button 
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+          "
+        >
+          <img class="searchbutton"
+            src="./search-interface-symbol (2).png"
+            style="width: 30px"
+            alt=""
+           />
+
+          
+        </button>
+      </div>
+
+      <ul>
+        <li><a href="">HOME</a></li>
+        <li><a href="">CART</a></li>
+        <li><a href="">CONTACT US</a></li>
+        <li><a href="">ABOUT</a></li>
+      </ul>
+    </header>
+    <div class="contaienr">
+      <div class="products">
+           
+        </div>
+    </div>
+    <footer>
+        <br>
+        <hr>
+        <div class="f-signin">
+            <p>
+                See personalized recommendations
+            </p>
+            <button>
+                Sign in
+            </button>
+            <p class="cust">
+                New Customer?
+               <a href="#">
+                Start here
+               </a>
+            </p>
+        </div>
+        <hr>
+        <br>
+        <div class="toplink">
+            <a href="#">
+                Back to top
+            </a>
+        </div>
+        <div class="options">
+            <div class="knowus">
+                <div>
+                    <h3>
+                        Get to Know us
+                    </h3>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Amazon About</a></li>
+                        <li><a href="#">Incerstor Relations</a></li>
+                        <li><a href="#">Amazon Devices</a></li>
+                        <li><a href="#">Amazon Services</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="Makemoney">
+                <div>
+                    <h3>
+                       Make Money with us
+                    </h3>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#">Sell products on Amazon</a></li>
+                        <li><a href="#">Sell on Amazon Bussiness</a></li>
+                        <li><a href="#">Sell apps on Amazon </a></li>
+                        <li><a href="#">Become an Affiliate </a></li>
+                        <li><a href="#">Advertize Your Products </a></li>
+                        <li><a href="#">Self-Publish with Us</a></li>
+                        <li><a href="#">HOSt an Amazon Hub</a></li>
+                        <li><a href="#">> See More Make money with Us</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="Payments">
+                <div>
+                    <h3>
+                       Amazon Payment Products
+                    </h3>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#">Amazon Bussines Card</a></li>
+                        <li><a href="#">Shop with Pooints</a></li>
+                        <li><a href="#">Reload Your Balance </a></li>
+                        <li><a href="#">Amazon Currency Converter </a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="yourinfo">
+                <div>
+                    <h3>
+                      Let Us Help You
+                    </h3>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#">Amazon and Covoid-19</a></li>
+                        <li><a href="#">Your Account</a></li>
+                        <li><a href="#">Your Orders </a></li>
+                        <li><a href="#">Shipping Rates and Policies </a></li>
+                        <li><a href="#">Returns & Placements</a></li>
+                        <li><a href="#">Manage Your Content and Devices</a></li>
+                        <li><a href="#">Amazon Assistent</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="space">
+            <div class="amazon">
+                <img src="./images/amazon_logo.png" alt="">
+            </div>
+           <div class="buttons">
+            
+            <button>
+                <img src="./images/globe.png" style="width: 20px;">
+                <select name="English" id="english">
+                    <option value="">English</option>
+                </select>
+            </button>
+            <button>
+                <strong>$</strong>
+                <span>USD - U.S. Dollar</span>
+
+            </button>
+            <button>
+                <span>
+                    <img src="./images/united-states.png" alt="">
+                </span>
+                <span>
+                    United States
+                </span>
+            </button>
+           </div>
+        </div>
+           
+        </div>
+
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
