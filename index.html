@@ -3,23 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
     <title>E-commerce store</title>
   </head>
   <body>
     <header>
-     <div>
-        <h1 class="logo">LOGO.</h1>
+     <div class="logodiv">
+        <button>[-]</button>
+        <h1 class="logo"><a href="index.html">MTKART.</a></h1>
      </div>
 
       <div class="search">
         <select name="all" id="all">
           <option value="All">All</option>
-          <option value="electronics">electronics</option>
-          <option value="jewelery">jewelery</option>
-          <option value="men's clothing">men's clothing</option>
+          <option value="electronics">Electronics</option>
+          <option value="jewelery">Jewelery</option>
+          <option value="men's clothing">Men's clothing</option>
         </select>
-        <input type="text"   oninput="handleInput(this)" placeholder="Search items here...." class="input"/>
+        <input type="text"   oninput="handleInput(this)" placeholder="Search items here...." id="input" class="input"/>
         <button 
           style="
             display: flex;
@@ -29,7 +30,7 @@
           "
         >
           <img class="searchbutton"
-            src="./search-interface-symbol (2).png"
+            src="./images/search-interface-symbol (2).png"
             style="width: 30px"
             alt=""
            />
@@ -38,13 +39,16 @@
         </button>
       </div>
 
-      <ul>
-        <li><a href="">HOME</a></li>
-        <li><a href="">CART</a></li>
-        <li><a href="">CONTACT US</a></li>
-        <li><a href="">ABOUT</a></li>
+      <ul class="navbar">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="./components/cart.html">CART</a></li>
+        <li><a href="./components/contact.html">CONTACT US</a></li>
+        <li><a href="./components/about.html">ABOUT</a></li>
       </ul>
     </header>
+    <div class="page_title">
+        <h1>HOME</h1>
+    </div>
     <div class="contaienr">
       <div class="products">
            
@@ -57,12 +61,12 @@
             <p>
                 See personalized recommendations
             </p>
-            <button>
-                Sign in
+            <button >
+                <a href="./components/signin.html" style="text-decoration: none; color: black;">Sign in</a>
             </button>
             <p class="cust">
                 New Customer?
-               <a href="#">
+               <a href="./components/signup.html">
                 Start here
                </a>
             </p>
@@ -185,6 +189,6 @@
 
     </footer>
 
-    <script src="index.js"></script>
+    <script src="./scripts/index.js" type="module"></script>
   </body>
 </html>
