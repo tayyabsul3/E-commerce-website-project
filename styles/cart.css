@@ -1,7 +1,8 @@
 .page_title{
    
-    background: #d6d0ee;
+    background: #000000;
     text-align: center;
+    color: white;
     padding: 10px 0px;
     font-family:'Courier New', Courier, monospace;
 }

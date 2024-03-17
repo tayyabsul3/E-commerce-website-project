@@ -1,49 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="shortcut icon" href="../images/logo2.jpg" type="image/x-icon" />
+
     <title>About</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
+      <div class="logodiv">
+        <span class="show_menu"
+          ><img src="../images/more.png" alt="show menu"
+        /></span>
+        <h1 class="logo"><a href="../index.html">MKart.</a></h1>
 
-        <div class="logodiv">
-           <button>[-]</button>
-           <h1 class="logo"><a href="index.html">MTKART.</a></h1>
+        <div class="modal disabled">
+          <div class="relative">
+            <button id="close">X</button>
+            <ul class="modal_navbar">
+              <li><a href="../index.html">HOME</a></li>
+              <li><a href="./cart.html">CART</a></li>
+              <li><a href="./contact.html">CONTACT US</a></li>
+              <li><a href="./about.html">ABOUT</a></li>
+            </ul>
+          </div>
         </div>
-   
-         <div class="search">
-
-           <input type="text"   oninput="handleInput(this)" placeholder="Search items here...." id="input" class="input"/>
-           <button 
-             style="
-               display: flex;
-               justify-content: center;
-               align-items: center;
-               padding: 10px;
-             "
-           >
-             <img class="searchbutton"
-               src="../images/search-interface-symbol (2).png "
-               style="width: 30px"
-               alt=""
-              />
-   
-             
-           </button>
-         </div>
-   
-         <ul class="navbar">
-           <li><a href="../index.html">HOME</a></li>
-           <li><a href="./cart.html">CART</a></li>
-           <li><a href="./contact.html">CONTACT US</a></li>
-           <li><a href="./about.html">ABOUT</a></li>
-         </ul>
-       </header>
-       <div class="page_title">
-        <h1>ABOUT US</h1>
       </div>
-</body>
+
+      <div class="search">
+        <input
+          type="text"
+          oninput="handleInput(this)"
+          placeholder="Search items here...."
+          id="input"
+          class="input"
+        />
+        <button
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+          "
+        >
+          <img
+            class="searchbutton"
+            src="../images/search-interface-symbol (2).png "
+            style="width: 30px"
+            alt=""
+          />
+        </button>
+      </div>
+
+      <ul class="navbar">
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="./cart.html">CART</a></li>
+        <li><a href="./contact.html">CONTACT US</a></li>
+        <li><a href="./about.html">ABOUT</a></li>
+      </ul>
+    </header>
+    <div class="page_title">
+      <h1>ABOUT US</h1>
+    </div>
+    <div class="about_container">
+      <div class="content">
+        <div class="Bio">
+          <h1>Personal information</h1>
+          <p>
+            <span class="heading">Name : </span>
+            <span>Muhammad Tayyab</span>
+          </p>
+          <p>
+            <span class="heading">Class : </span>
+            <span>BSSE 3A (22-ARID-945)</span>
+          </p>
+          <p>
+            <span class="heading">University:</span>
+            <span>PMAS Arid University</span>
+          </p>
+          <p>
+            <span class="heading">Title :</span>
+            <span>E-Commerce Website</span>
+          </p>
+        </div>
+        <div class="projectinfo">
+          <h1>Functionalities</h1>
+          <ul>
+            <li>Browsing</li>
+            <li>Login / Sign up</li>
+            <li>Payment Integration</li>
+            <li>User / Admin Dashboard</li>
+            <li>Filtering , Cart Management</li>
+          </ul>
+        </div>
+        <div class="tech_stack"></div>
+      </div>
+      <div class="imgage">
+        <img src="../images/profile-pic.png" alt="profile photo" />
+      </div>
+    </div>
+    <script src="../scripts/about.js"></script>
+  </body>
 </html>

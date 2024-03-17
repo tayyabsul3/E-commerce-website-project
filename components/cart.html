@@ -4,15 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="shortcut icon" href="../images/logo2.jpg" type="image/x-icon" />
+
     <link rel="stylesheet" href="../styles/cart.css" />
     <title>Cart</title>
   </head>
   <body>
     <header>
-
       <div class="logodiv">
-        <button>[-]</button>
-        <h1 class="logo"><a href="index.html">MTKART.</a></h1>
+        <span class="show_menu"
+          ><img src="../images/more.png" alt="show menu"
+        /></span>
+        <h1 class="logo"><a href="../index.html">MKart.</a></h1>
+
+        <div class="modal disabled">
+          <div class="relative">
+            <button id="close">X</button>
+            <ul class="modal_navbar">
+              <li><a href="../index.html">HOME</a></li>
+              <li><a href="./cart.html">CART</a></li>
+              <li><a href="./contact.html">CONTACT US</a></li>
+              <li><a href="./about.html">ABOUT</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       <div class="search">

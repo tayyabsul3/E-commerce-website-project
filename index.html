@@ -4,13 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="shortcut icon" href="../images/logo2.jpg" type="image/x-icon">
+
     <title>E-commerce store</title>
   </head>
   <body>
     <header>
      <div class="logodiv">
-        <button>[-]</button>
-        <h1 class="logo"><a href="index.html">MTKART.</a></h1>
+        <Span class="show_menu"><img src="./images/more.png" alt="show menu" ></Span>
+        <h1 class="logo"><a href="index.html">MKart.</a></h1>
+        
+        <div class="modal disabled ">
+           <div class="relative">
+            <button id="close">X</button>
+            <ul class="modal_navbar">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="./components/cart.html">CART</a></li>
+                <li><a href="./components/contact.html">CONTACT US</a></li>
+                <li><a href="./components/about.html">ABOUT</a></li>
+              </ul>
+           </div>
+        </div>
      </div>
 
       <div class="search">
@@ -78,7 +92,7 @@
                 Back to top
             </a>
         </div>
-        <div class="options">
+        <!-- <div class="options">
             <div class="knowus">
                 <div>
                     <h3>
@@ -155,7 +169,7 @@
             </div>
 
 
-        </div>
+        </div> -->
 
         <div class="space">
             <div class="amazon">
@@ -164,7 +178,7 @@
            <div class="buttons">
             
             <button>
-                <img src="./images/globe.png" style="width: 20px;">
+                <img src="../images/globe.png" style="width: 20px;">
                 <select name="English" id="english">
                     <option value="">English</option>
                 </select>
@@ -176,7 +190,7 @@
             </button>
             <button>
                 <span>
-                    <img src="./images/united-states.png" alt="">
+                    <img src="../images/united-states.png" alt="">
                 </span>
                 <span>
                     United States

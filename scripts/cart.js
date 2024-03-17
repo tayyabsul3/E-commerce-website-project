@@ -51,3 +51,17 @@ cart.forEach((value) => {
 const products = document.querySelector(".products");
 products.innerHTML = product; // Moved outside the loop
 console.log(cart);
+
+
+
+
+const Modal = document.querySelector(".modal");
+const CloseBtn = document.querySelector("#close");
+const showmenuBtn = document.querySelector(".show_menu");
+showmenuBtn.addEventListener("click", ()=>{
+  Modal.classList.add("active");
+})
+
+CloseBtn.addEventListener("click",()=>{
+  Modal.classList.remove("active");
+})
